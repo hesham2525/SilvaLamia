@@ -24,7 +24,7 @@ const DetailsSection = () => {
 
         <div className="map-wrapper">
           <img
-            src="/public/e600dc2ad4be96f81dafa8ef52ba2513.png"
+            src="/e600dc2ad4be96f81dafa8ef52ba2513.png"
             alt="Butterfly"
             className="map-overlay-image"
           />

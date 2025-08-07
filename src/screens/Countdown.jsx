@@ -35,7 +35,7 @@ const Countdown = () => {
   return (
     <section className="countdown-section d-flex items-center justify-center">
     <div className="sec2 slide-in-left " style={{ animationDelay: '900ms' }}>
-      <img src="/public/e7f92b1977746f7563252b2271378398.png" alt="wedding" width={300} />
+      <img src="/e7f92b1977746f7563252b2271378398.png" alt="wedding" width={300} />
     </div>
     <div className="sec1 slide-in-right" style={{ animationDelay: '900ms' }}>
       <h2>ALMOST TIME!</h2>
