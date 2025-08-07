@@ -1,0 +1,113 @@
+/* HeroSection.css */
+.hero-section {
+  background-image: url("/back.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  position: relative;
+}
+.hero-content {
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 800px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/back.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+}
+.quran-text{
+  
+}
+
+.couple-names {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.wedding-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+/* .date-venue{
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  justify-content: center;
+  align-items: center;
+
+} */
+.date-venue p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .couple-names {
+    font-size: 1.8rem;
+  }
+
+  .wedding-title {
+    font-size: 1.4rem;
+  }
+
+  .date-venue p {
+    font-size: 1rem;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px); /* تبدأ من فوق */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* تنزل لمكانها الطبيعي */
+  }
+}
+
+.fade-down {
+  opacity: 0;
+  animation: fadeDown 1s ease-out forwards;
+}
+
+

@@ -1,0 +1,103 @@
+/* DetailsSection.css */
+.details-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f5f0eb;
+  }
+  
+  .details-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #333;
+  }
+  
+  .details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .detail-item {
+    flex: 1;
+    min-width: 300px;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .detail-item1{
+    flex: 1;
+    min-width: 300px;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detail-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #8b6e4b;
+  }
+  
+  .detail-item p {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .venue-address {
+    text-align: center;
+    margin: 1.5rem 0;
+    line-height: 1.8;
+  }
+  
+  .rating {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #8b6e4b;
+  }
+  
+  .map-button {
+    background-color: transparent;
+    border: 1px solid #8b6e4b;
+    color: #8b6e4b;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .map-button:hover {
+    background-color: #8b6e4b;
+    color: white;
+  }
+  .map-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 5%;
+  }
+  
+  .map-overlay-image {
+    position: absolute;
+    top: -50px;          
+    right: 0px;         
+    width: 120px;       
+    height: auto;
+    z-index: 5;
+    border-radius: 8px; 
+  }
+  @media (max-width: 768px) {
+    .details-container {
+      flex-direction: column;
+    }
+    
+    .detail-item {
+      min-width: 100%;
+      margin: 1rem 0;
+    }
+  }
