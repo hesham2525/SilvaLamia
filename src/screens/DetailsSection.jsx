@@ -13,11 +13,11 @@ const DetailsSection = () => {
           <p>Aug 19, 2025 at 9:00 PM</p>
         </div>
 
-        <div className="detail-item">
+        <div className="detail-رل">
           <h3>VENUE</h3>
           <p> Kempinski Wedding Halls</p>
           <p className="venue-address">
-            مدخل المدينة الصناعية – أمام مصنع توشيبا العربي, Assuit - Egypt
+            مدخل المدينة الصناعية – أمام مصنع توشيبا العربي ,    اسيوط - مصر
             <br />
           </p>
         </div>

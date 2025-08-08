@@ -37,19 +37,24 @@
   padding: 0 20px;
 }
 .quran-text{
-  
+  font-size: 20px;
 }
 
 .couple-names {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 .wedding-title {
   font-size: 1.8rem;
   margin-bottom: 2rem;
   font-weight: 300;
+}
+.slsl{
+  font-family: 'Courier New', Courier, monospace;
 }
 /* .date-venue{
   display: flex;

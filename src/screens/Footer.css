@@ -28,7 +28,10 @@
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  
+  .txt1{
+      font-family: 'Times New Roman', Times, serif;
+
+  }
   .calendar-button:hover {
     background-color: #6d563a;
   }

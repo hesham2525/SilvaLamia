@@ -1,9 +1,4 @@
 /* Countdown.css */
-.countdown-section {
-  padding: 4rem 2rem;
-  text-align: center;
-  background-color: white;
-}
 
 .countdown-section h2 {
   font-size: 2rem;
@@ -40,7 +35,7 @@
   font-size: 1rem;
   color: #666;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 768px) {
@@ -65,6 +60,7 @@
   flex-wrap: wrap;
   text-align: center;
   background-color: #fffaf8;
+    padding: 4rem 2rem;
 }
 
 .sec1 {
