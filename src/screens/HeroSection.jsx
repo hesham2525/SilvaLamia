@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="hero-section">
       <div className="hero-content">
         <br />
-        <h1 className=" fade-down" style={{ animationDelay: "300ms" }}>
+        <h1 className=" Wedding fade-down" style={{ animationDelay: "300ms" }}>
           Wedding Ceremony
         </h1>
         <br />
