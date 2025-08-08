@@ -13,7 +13,7 @@ const DetailsSection = () => {
           <p>Aug 19, 2025 at 9:00 PM</p>
         </div>
 
-        <div className="detail-رل">
+        <div className="detail-item">
           <h3>VENUE</h3>
           <p> Kempinski Wedding Halls</p>
           <p className="venue-address">

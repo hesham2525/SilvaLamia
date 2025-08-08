@@ -47,6 +47,9 @@
   font-family: 'Times New Roman', Times, serif;
 
 }
+.date{
+  font-size: 2rem;
+}
 
 .wedding-title {
   font-size: 1.8rem;
@@ -65,7 +68,7 @@
 
 } */
 .date-venue p {
-  font-size: 1.2rem;
+  font-size: 1.45rem;
   margin: 0.5rem 0;
 }
 

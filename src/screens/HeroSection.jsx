@@ -10,12 +10,16 @@ const HeroSection = () => {
           Wedding Ceremony
         </h1>
         <br />
-        <h3 className="quran-text fade-up" style={{ animationDelay: "500ms" }}>
-          وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا
-          لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ﴿ 
+       
+        <h3 className="quran-text fade-up" style={{ animationDelay: "500ms", lineHeight: "2.5" }}>
+        ( بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ )
         </h3>
         <h3 className="quran-text fade-up" style={{ animationDelay: "500ms" }}>
-          ﴾ مَوَدَّةً وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِقَوْمٍ
+         وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا
+          لِتَسْكُنُوا إِلَيْهَا  
+        </h3>
+        <h3 className="quran-text fade-up" style={{ animationDelay: "500ms" }}>
+           وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِقَوْمٍ
           يَتَفَكَّرُونَ
         </h3>
         <br />
