@@ -8,7 +8,7 @@ const DetailsSection = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowMap(true);
-    }, 1000);
+    }, 500);
 
     return () => clearTimeout(timer); 
   }, []);
