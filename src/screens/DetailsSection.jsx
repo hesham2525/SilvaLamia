@@ -33,7 +33,7 @@ const DetailsSection = () => {
 
           {!showMap ? (
             <img
-              src="/public/Screenshot 2025-08-13 022909.png"
+              src="/Screenshot 2025-08-13 022909.png"
               alt="Map preview"
               style={{ width: "100%", height: "100%", cursor: "pointer", border: 0 }}
               onClick={() => setShowMap(true)}
