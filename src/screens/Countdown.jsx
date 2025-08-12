@@ -1,5 +1,5 @@
 // Countdown.js
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./Countdown.css";
 
 const Countdown = () => {
@@ -9,9 +9,6 @@ const Countdown = () => {
     minutes: 0,
     seconds: 0,
   });
-  
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef(null);
 
   useEffect(() => {
     const calculateTimeLeft = () => {
@@ -35,60 +32,38 @@ const Countdown = () => {
     return () => clearInterval(timer);
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect(); 
-        }
-      },
-      { threshold: 0.2 } //    
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section
-      ref={sectionRef}
-      className={`countdown-section d-flex items-center justify-center ${
-        isVisible ? "animate" : ""
-      }`}
-    >
-      <div className={`sec2 ${isVisible ? "slide-in-left" : ""}`} style={{ animationDelay: "1300ms" }}>
-        <img src="/e7f92b1977746f7563252b2271378398.png" alt="wedding" width={300} />
-      </div>
-      <div className={`sec1 ${isVisible ? "slide-in-right" : ""}`} style={{ animationDelay: "1300ms" }}>
-        <h2>ALMOST TIME!</h2>
-        <p className="countdown-subtitle">
-          Save the date as we approach the wedding of a lifetime.
-        </p>
-
-        <div className="countdown-timer">
-          <div className="countdown-item">
-            <span className="countdown-value">{timeLeft.days}</span>
-            <span className="countdown-label">DAYS</span>
-          </div>
-          <div className="countdown-item">
-            <span className="countdown-value">{timeLeft.hours}</span>
-            <span className="countdown-label">HOURS</span>
-          </div>
-          <div className="countdown-item">
-            <span className="countdown-value">{timeLeft.minutes}</span>
-            <span className="countdown-label">MINUTES</span>
-          </div>
-          <div className="countdown-item">
-            <span className="countdown-value">{timeLeft.seconds}</span>
-            <span className="countdown-label">SECONDS</span>
-          </div>
+    <section className="countdown-section d-flex items-center justify-center">
+    <div className="sec2 slide-in-left " style={{ animationDelay: '2000ms' }}>
+      <img src="/e7f92b1977746f7563252b2271378398.png" alt="wedding" width={300} />
+    </div>
+    <div className="sec1 slide-in-right" style={{ animationDelay: '2000ms' }}>
+      <h2>ALMOST TIME!</h2>
+      <p className="countdown-subtitle">
+        Save the date as we approach the wedding of a lifetime.
+      </p>
+  
+      <div className="countdown-timer">
+        <div className="countdown-item">
+          <span className="countdown-value">{timeLeft.days}</span>
+          <span className="countdown-label">DAYS</span>
+        </div>
+        <div className="countdown-item">
+          <span className="countdown-value">{timeLeft.hours}</span>
+          <span className="countdown-label">HOURS</span>
+        </div>
+        <div className="countdown-item">
+          <span className="countdown-value">{timeLeft.minutes}</span>
+          <span className="countdown-label">MINUTES</span>
+        </div>
+        <div className="countdown-item">
+          <span className="countdown-value">{timeLeft.seconds}</span>
+          <span className="countdown-label">SECONDS</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  
   );
 };
 
