@@ -17,7 +17,7 @@ const DetailsSection = () => {
           <h3>VENUE</h3>
           <p> Kempinski Wedding Halls</p>
           <p className="venue-address">
-            مدخل المدينة الصناعية – أمام مصنع توشيبا العربي ,    اسيوط - مصر
+            مدخل المدينة الصناعية – أمام مصنع توشيبا العربي , اسيوط - مصر
             <br />
           </p>
         </div>
@@ -29,15 +29,14 @@ const DetailsSection = () => {
             className="map-overlay-image"
           />
           <iframe
-            title="Kempinski - Assiut"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d887.2893319481157!2d31.0607467!3d27.1827916!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1445073a818d9799%3A0x14a9b05d16ca50b4!2z2YLYp9i52Ycg2KfZgdix2KfYrSDZg9mF2KjZhtiz2YPZiiAmINmD2KfYs9mE!5e0!3m2!1sen!2seg!4v1754605176211!5m2!1sen!2seg"
-            width="100%"
-            height="400"
-            style={{ border: 0 }}
-            allowFullScreen
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />  
+            title="Google Map"
+          ></iframe>
         </div>
       </div>
     </section>

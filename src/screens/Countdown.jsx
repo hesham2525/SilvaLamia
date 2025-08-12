@@ -34,10 +34,10 @@ const Countdown = () => {
 
   return (
     <section className="countdown-section d-flex items-center justify-center">
-    <div className="sec2 slide-in-left " style={{ animationDelay: '900ms' }}>
+    <div className="sec2 slide-in-left " style={{ animationDelay: '1300ms' }}>
       <img src="/e7f92b1977746f7563252b2271378398.png" alt="wedding" width={300} />
     </div>
-    <div className="sec1 slide-in-right" style={{ animationDelay: '900ms' }}>
+    <div className="sec1 slide-in-right" style={{ animationDelay: '1300ms' }}>
       <h2>ALMOST TIME!</h2>
       <p className="countdown-subtitle">
         Save the date as we approach the wedding of a lifetime.
