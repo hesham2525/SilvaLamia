@@ -1,9 +1,18 @@
 // DetailsSection.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./DetailsSection.css";
 
 const DetailsSection = () => {
   const [showMap, setShowMap] = useState(false);
+
+  // تحميل الخريطة بعد ثانيتين من فتح الصفحة
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowMap(true);
+    }, 2000);
+
+    return () => clearTimeout(timer); // تنظيف التايمر عند إغلاق الكومبوننت
+  }, []);
 
   return (
     <section className="details-section">
@@ -24,21 +33,11 @@ const DetailsSection = () => {
           </p>
         </div>
 
-        <div className="map-wrapper" style={{ position: "relative", width: "100%", height: "400px" }}>
-          <img
-            src="/e600dc2ad4be96f81dafa8ef52ba2513.png"
-            alt="Butterfly"
-            className="map-overlay-image"
-          />
-
-          {!showMap ? (
-            <img
-              src="/Screenshot 2025-08-13 022909.png"
-              alt="Map preview"
-              style={{ width: "100%", height: "100%", cursor: "pointer", border: 0 }}
-              onClick={() => setShowMap(true)}
-            />
-          ) : (
+        <div
+          className="map-wrapper"
+          style={{ position: "relative", width: "100%", height: "400px" }}
+        >
+          {showMap ? (
             <iframe
               title="Kempinski - Assiut"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d887.2893319481157!2d31.0607467!3d27.1827916!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1445073a818d9799%3A0x14a9b05d16ca50b4!2z2YLYp9i52Ycg2KfZgdix2KfYrSDZg9mF2KjZhtiz2YPZiiAmINmD2KfYs9mE!5e0!3m2!1sen!2seg!4v1754605176211!5m2!1sen!2seg"
@@ -49,6 +48,10 @@ const DetailsSection = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
+          ) : (
+            <p style={{ textAlign: "center", padding: "50px" }}>
+              Loading map...
+            </p>
           )}
         </div>
       </div>
