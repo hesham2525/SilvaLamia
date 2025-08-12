@@ -5,13 +5,12 @@ import "./DetailsSection.css";
 const DetailsSection = () => {
   const [showMap, setShowMap] = useState(false);
 
-  // تحميل الخريطة بعد ثانيتين من فتح الصفحة
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowMap(true);
-    }, 2000);
+    }, 1000);
 
-    return () => clearTimeout(timer); // تنظيف التايمر عند إغلاق الكومبوننت
+    return () => clearTimeout(timer); 
   }, []);
 
   return (
@@ -33,10 +32,12 @@ const DetailsSection = () => {
           </p>
         </div>
 
-        <div
-          className="map-wrapper"
-          style={{ position: "relative", width: "100%", height: "400px" }}
-        >
+        <div className="map-wrapper" style={{ position: "relative", width: "100%", height: "400px" }}>
+          <img
+            src="/e600dc2ad4be96f81dafa8ef52ba2513.png"
+            alt="Butterfly"
+            className="map-overlay-image"
+          />
           {showMap ? (
             <iframe
               title="Kempinski - Assiut"
